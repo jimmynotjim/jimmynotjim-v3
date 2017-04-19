@@ -29,7 +29,21 @@ markdown: kramdown
 theme: minima
 gems:
   - jekyll-feed
-source: dist
 exclude:
   - Gemfile
   - Gemfile.lock
+  - .eslintrc
+  - .gitignore
+  - .npmrc
+  - node_modules
+  - src
+  - gulp
+  - gulpfile.js
+  - package.json
+  - npm-debug.log
+  - setup.sh
+  - CHANGELOG.md
+  - README.md
+  - LICENSE
+  - CONTRIBUTING.md
+  - TERMS.md

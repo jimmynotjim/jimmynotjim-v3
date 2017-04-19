@@ -12,7 +12,8 @@ var loc = {
   src:  './src',
   dist: './dist',
   lib:  './node_modules', // eslint-disable-line no-sync, no-inline-comments, max-len
-  test: './test'
+  test: './test',
+  site: './_site'
 };
 
 module.exports = {
@@ -75,5 +76,6 @@ module.exports = {
       ],
       dest: loc.dist
     }
-  }
+  },
+  site: loc.site
 };

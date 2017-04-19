@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Evolved",
+    "description": "foo",
+    "url": "https://github.com/wp-evolved",
+    "preview": "http://placekitten.com/g/800/600"
+  }, {
+    "name": "DxBoston",
+    "description": "bar",
+    "url": "http://www.dxboston.com/",
+    "preview": "http://placekitten.com/g/800/600"
+  }, {
+    "name": "scrollNav",
+    "description": "foo",
+    "url": "http://scrollnav.com/",
+    "preview": "http://placekitten.com/g/800/600"
+  }, {
+    "name": "typecards",
+    "description": "bar",
+    "url": "http://typcardsapp.com",
+    "preview": "http://placekitten.com/g/800/600"
+  }
+]

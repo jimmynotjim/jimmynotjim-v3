@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="{{ site.github.url }}/dist/styles/style.min.css">
+  </head>
+  <body>
+    {% include header.html %}
+
+    <main class="content content__1-3" id="main" role="main">
+      <div class="content_bar"></div>
+      <div class="content_wrapper">
+        <section class="content_main">
+          {% include content-header.html %}
+          {{ content }}
+        </section>
+      </div>
+    </main>
+
+      {% include footer.html %}
+
+  <script src="{{ site.github.url }}/dist/js/main.min.js"></script>
+  </body>
+</html>

@@ -10,7 +10,8 @@ var config = require( '../config' );
 
 gulp.task( 'watch', [ 'serve' ], function() {
   gulp.watch( config.scripts.src, [ 'scripts' ] );
-  gulp.watch( config.styles.cwd + '/**/*.less', [ 'styles' ] );
+  console.log( config.styles.cwd );
+  gulp.watch( config.styles.cwd + '/**/*.scss', [ 'styles' ] );
   gulp.watch( config.images.src, [ 'images' ] );
   gulp.watch( config.copy.files.src, [ 'copy:files' ] );
 } );

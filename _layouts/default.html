@@ -63,13 +63,10 @@
       <div class="global-wrapper">
         <article class="content">
           {% include featured-projects.html %}
-        {% comment %}
-          <?php include( CHILD_SS_DIR . '/modules/featured-projects.php' ); ?>
 
-          <?php include( CHILD_SS_DIR . '/modules/external-updates.php' ); ?>
+          {% include external-updates.html %}
 
-          <?php include( CHILD_SS_DIR . '/modules/contact.php' ); ?>
-        {% endcomment %}
+          {% include contact.html %}
         </article>
       </div>
 

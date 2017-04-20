@@ -43,6 +43,7 @@ module.exports = {
     dest: loc.dist
   },
   styles: {
+    cwd:      loc.src + '/styles',
     src:      loc.src + '/styles/style.scss',
     dest:     loc.dist + '/styles',
     settings: {

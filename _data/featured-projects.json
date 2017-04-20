@@ -1,22 +1,22 @@
 [
   {
     "name": "Evolved",
-    "description": "foo",
+    "description": "A simple pair of parent and child themes and a set of build tasks to help you start and manage your WordPress theme development process.",
     "url": "https://github.com/wp-evolved",
     "preview": "http://placekitten.com/g/800/600"
   }, {
     "name": "DxBoston",
-    "description": "bar",
+    "description": "A design conference put on by AIGA Boston to spotlight great experimenters in Boston and beyond.",
     "url": "http://www.dxboston.com/",
     "preview": "http://placekitten.com/g/800/600"
   }, {
     "name": "scrollNav",
-    "description": "foo",
+    "description": "A jQuery plugin that auto-populates a scrolling Table of Contents from a page's existing headings.",
     "url": "http://scrollnav.com/",
     "preview": "http://placekitten.com/g/800/600"
   }, {
     "name": "typecards",
-    "description": "bar",
+    "description": "A set of digital flashcards on typography terminology built with html and javascript to mimic a native app experience.",
     "url": "http://typcardsapp.com",
     "preview": "http://placekitten.com/g/800/600"
   }

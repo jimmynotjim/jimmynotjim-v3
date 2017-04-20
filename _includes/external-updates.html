@@ -1,0 +1,52 @@
+{% comment %}
+<?php
+  include( CHILD_SS_DIR . '/functions/dribbble.php' );
+  include( CHILD_SS_DIR . '/functions/github.php' );
+
+  $dribbble = new Dribbble();
+  $my_shots = $dribbble->get_player_shots( 'jimmynotjim', 1, '2' );
+  $my_photos = json_decode( file_get_contents( 'https://api.500px.com/v1/photos?feature=user&username=jimmynotjim&rpp=1&image_size=4&consumer_key=cvKdyFcm8iaHJUshKzzyyTHG6XsbK2dpBLLYzH9s' ) );
+  $my_events = gh_activity( 4 );
+?>
+{% endcomment %}
+
+<section class="dribbble-updates">
+  <h3 class="external-heading">Latest on Dribbble</h3>
+  <ul class="dribbble-list">
+  <?php foreach ( $my_shots->shots as $shot ) : ?>
+    <li>
+      <a href="<?php echo $shot->url; ?>">
+        <img src="<?php echo $shot->image_url; ?>" alt="Preview of <?php echo $shot->title; ?>" />
+      </a>
+    </li>
+  <?php endforeach; ?>
+  </ul>
+</section>
+
+<section class="fivehund-updates">
+  <h3 class="external-heading">Latest on 500px</h3>
+  <ul class="fivehund-list">
+  <?php foreach( $my_photos->photos as $photo ) : ?>
+    <li>
+      <a href="http://500px.com<?php echo $photo->url; ?>">
+        <img src="<?php echo $photo->image_url; ?>" alt="Preview of <?php echo $photo->name; ?>" />
+      </a>
+    </li>
+  </ul>
+  <?php endforeach; ?>
+</section>
+
+<section class="github-updates">
+  <h3 class="external-heading">Latest on Github</h3>
+  <ul class="github-list">
+  <?php foreach( $my_events as $event ) : ?>
+    <li>
+      <header class="event-header">
+        <h4 class="event-title"><?php echo $event['event_title']; ?></h4>
+        <span class="event-time">about <?php echo time_ago( $event['event_time'] ); ?> ago</span>
+      </header>
+      <?php echo $event['addl_details']; ?>
+    </li>
+  <?php endforeach; ?>
+  </ul>
+</section>

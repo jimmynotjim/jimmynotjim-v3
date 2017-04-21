@@ -4,7 +4,7 @@
     {% for project in site.data.featured-projects %}
     <li class="single-project">
       <a href="{{ project.url }}" class="project-link">
-        <img src="{{ project.preview }}" alt="Preview of {{ project.name }}" class="project-image" />
+        <img src="{{ site.github.url }}{{ project.preview }}" alt="Preview of {{ project.name }}" class="project-image" />
         <div class="project-details">
           <h3 class="project-heading">{{ project.name }}</h3>
         </div>

@@ -13,13 +13,29 @@
 
     <main role="main" class="site-content">
 
-      <div class="global-wrapper">
         <article class="content">
+
+          <div class="global-wrapper">
+            <section class="home-intro">
+              <div class="home-portrait">
+                    <img src="https://avatars0.githubusercontent.com/u/1280430?v=3&s=460">
+              </div>
+              <div class="home-quote">
+                <h1 class="home-quote-text">
+                  A home builder turned web maker and image taker. Raised in small town New England, currently lost somewhere on the prairie.
+                </h1>
+              </div>
+            </section>
+          </div>
+
+          {% comment %}<section class="featured-photos">
+            <img src="https://drscdn.500px.org/photo/130459359/q%3D80_m%3D1500/b025b61fb415dfe3750f392b861492de">
+          </section>{% endcomment %}
+
           {% include featured-projects.html %}
 
           {% include contact.html %}
         </article>
-      </div>
 
     </main>
 

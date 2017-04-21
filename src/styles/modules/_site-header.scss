@@ -1,45 +1,36 @@
 .site-header {
-  margin-bottom: $base-spacing-unit * 2;
+  border-top: 4px solid $color-tertiary;
+}
+
+.site-nav-list {
+  @extend %unstyled-list;
+
+  text-align: center;
+  font-size: $size-epsilon;
+  padding: $half-spacing-unit;
+
+  li {
+    display: inline-block;
+
+    &:not(:first-child) {
+      margin-left: 40px;
+    }
+  }
+
+  a {
+    padding-bottom: 1px;
+    color: $color-primary;
+
+    &:hover {
+      color: $color-tertiary;
+    }
+
+    &:hover {
+      border-bottom: 1px solid $color-tertiary;
+    }
+  }
 }
 
 .site-logo {
-  background: $color-tertiary;
-  border-bottom: 1px solid tint($color-tertiary, 12%);
-  box-shadow: 0 1px 0 $color-tertiary-shaded;
-  color: #fff;
-  display: block;
-  font-family: $font-primary;
-  font-size: em($size-beta, $base-font-size);
-  font-weight: 600;
-  padding: $half-spacing-unit;
-  text-align: center;
-  text-shadow: 1px 1px $color-tertiary-shaded;
-
-  &:hover,
-  &:focus,
-  &:active {
-    color: #fff;
-  }
-
-  @media screen and (min-width: $lap-start) {
-    font-size: em($size-kilo, $base-font-size);
-    padding: $base-spacing-unit;
-  }
-}
-
-.section-heading {
-  background-color: $color-background;
-
-  h1 {
-    font-size: em($size-beta, $base-font-size);
-    max-width: 20em;
-    margin: 0 auto;
-    text-align: center;
-
-    @media screen and (min-width: $lap-start) {
-      font-size: em($size-alpha, $base-font-size);
-      padding-bottom: $base-spacing-unit;
-      padding-top: $base-spacing-unit;
-    }
-  }
+  display: none;
 }

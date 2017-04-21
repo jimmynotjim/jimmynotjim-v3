@@ -39,14 +39,14 @@
 <section class="github-updates">
   <h3 class="external-heading">Latest on Github</h3>
   <ul class="github-list">
-  <?php foreach( $my_events as $event ) : ?>
+  {% for event in site.data.github-events %}
     <li>
       <header class="event-header">
-        <h4 class="event-title"><?php echo $event['event_title']; ?></h4>
-        <span class="event-time">about <?php echo time_ago( $event['event_time'] ); ?> ago</span>
+        <h4 class="event-title">{{ event.type }}</h4>
+        <span class="event-time">about {{ event.created_at }} ago</span>
       </header>
       <?php echo $event['addl_details']; ?>
     </li>
-  <?php endforeach; ?>
+    {% endfor %}
   </ul>
 </section>

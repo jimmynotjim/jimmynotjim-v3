@@ -39,8 +39,8 @@ $flexible-media:  true!default;
 /**
  * Set the breakpoints (set these to where your content breaks, not to specific screen sizes)
  */
-$lap-start:   520px!default;
-$desk-start:  840px!default;
+$lap-start:   620px!default;
+$desk-start:  1060px!default;
 $wall-start:  1200px!default;
 $palm-end:    $lap-start - 1px!default;
 $lap-end:     $desk-start - 1px!default;
@@ -50,28 +50,52 @@ $desk-end:    $wall-start - 1px!default;
 /**
  * Neat Grid Settings
  */
-$border-box-sizing: true!default;
+$border-box-sizing:   true!default;
 $column:              70px!default;
 $grid-columns:        12!default;
-$gutter:              20px!default;
+$gutter:              $base-spacing-unit * 3!default;
 $max-width:           1400px!default;
-$visual-grid:         false!default;
+$visual-grid:         true!default;
 $visual-grid-color:   yellow!default;
 $visual-grid-index:   front!default;
 $visual-grid-opacity: 0.5!default;
 
+$neat-grid: (
+  columns: $grid-columns,
+  gutter: $base-spacing-unit,
+  color: $visual-grid-color
+);
+
+$neat-grid-large: (
+  columns: $grid-columns,
+  gutter: $base-spacing-unit * 3,
+  color: $visual-grid-color,
+  media: "screen and (min-width: $desk-start)"
+);
+
+$neat-grid-projects-lap: (
+  columns: 2,
+  gutter: 0,
+  media: "screen and (min-width: $lap-start)"
+);
+
+$neat-grid-projects-desk: (
+  columns: 3,
+  gutter: 0,
+  media: "screen and (min-width: $desk-start)"
+);
 
 /**
  * Font-sizes (in pixels). Refer to relevant sections for their implementations.
  */
 $size-giga:     96px;
-$size-mega:     72px;
-$size-kilo:     42px; // h1-size
+$size-mega:     64px;
+$size-kilo:     44px; // h1-size
 
-$size-alpha:    35px;
-$size-beta:     26px; // h2-size
-$size-gamma:    22px; // h3-size
-$size-delta:    19px; // h4-size
+$size-alpha:    36px;
+$size-beta:     30px; // h2-size
+$size-gamma:    24px; // h3-size
+$size-delta:    20px; // h4-size
 $size-epsilon:  17px; // h5-site
 $size-zeta:     14px; // h6-size
 
@@ -105,8 +129,8 @@ $close-quote: null;
 /**
  * Typography
  */
-$font-primary:    'jubilat', Georgia, serif;
-$font-secondary:  'freight-sans-pro', 'Open Sans', 'Helvetica Neue', sans-serif;
+$font-primary:    'Crimson Text', Georgia, serif;
+$font-secondary:  'Lato', 'Open Sans', 'Helvetica Neue', sans-serif;
 
 
 /**
@@ -116,7 +140,7 @@ $color-primary:         #25323d;
 $color-secondary:       #0c3257;
 $color-tertiary:        #c93b2b;
 $color-tertiary-shaded: #911f12;
-$color-background:      #5c96cd;
+$color-background:      #fbfbf7;
 $color-bg-tinted:       shade($color-background, 15%);
 $color-text:            $color-primary;
 $color-text-required:   #b1b3b6;

@@ -1,5 +1,4 @@
 <section class="featured-projects">
-  <h2 class="featured-heading">Featured Projects</h2>
   <ul class="project-list project-list--featured">
 
     {% for project in site.data.featured-projects %}
@@ -8,7 +7,6 @@
         <img src="{{ project.preview }}" alt="Preview of {{ project.name }}" class="project-image" />
         <div class="project-details">
           <h3 class="project-heading">{{ project.name }}</h3>
-          <p class="project-text">{{ project.description }}</p>
         </div>
       </a>
     </li>

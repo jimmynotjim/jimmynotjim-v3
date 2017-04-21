@@ -1,0 +1,72 @@
+.featured-projects {
+  @include grid-container;
+  margin-bottom: $base-spacing-unit * 3;
+}
+
+.project-list {
+  @extend %cf;
+  @extend %unstyled-list;
+}
+
+.single-project {
+  overflow: hidden;
+  position: relative;
+
+  &:hover {
+    .project-image {
+      @include filter( blur(2px) );
+    }
+
+    .project-details {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  @include grid-column(1, $neat-grid-projects-lap);
+
+  @include grid-media($neat-grid-projects-desk) {
+    @include grid-column(1);
+
+    &:nth-child(4) {
+      margin-left: (100 / 3) * 1%;
+    }
+  }
+}
+
+.project-link {
+  display: block;
+}
+
+.project-image {
+  display: block;
+}
+
+.project-heading {
+  font-family: $font-secondary;
+  font-size: em($size-beta, $base-font-size);
+  font-weight: 900;
+  letter-spacing: 0.05em;
+  margin-bottom: 0;
+  text-align: center;
+  width: 100%;
+
+  @media screen and (min-width: $wall-start) {
+    font-size: em($size-alpha, $base-font-size);
+  }
+}
+
+.project-details {
+  background-color: rgba($color-secondary, 0.8);
+  color: #fff;
+  display: none;
+  height: 100%;
+  padding: $base-spacing-unit * 2;
+  position: absolute;
+  top: 0;
+  width: 100%;
+
+  @media screen and (min-width: $wall-start) {
+    padding: $base-spacing-unit;
+  }
+}

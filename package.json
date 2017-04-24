@@ -17,7 +17,7 @@
     "jimmynotjim"
   ],
   "scripts": {
-    "start": "parallelshell 'bundle exec jekyll build --watch' 'gulp watch'",
+    "start": "parallelshell 'bundle exec jekyll build --config _config.yml,_config_dev.yml --watch' 'gulp watch'",
     "build": "gulp build"
   },
   "devDependencies": {

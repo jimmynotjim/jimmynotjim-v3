@@ -19,7 +19,6 @@
 
     .project-details {
       display: flex;
-      align-items: center;
     }
   }
 
@@ -38,10 +37,28 @@
 
 .project-link {
   display: block;
+  border-bottom: none!important;
 }
 
 .project-image {
   display: block;
+}
+
+.project-details {
+  align-items: center;
+  background-color: rgba($color-secondary, 0.8);
+  color: #fff;
+  display: flex;
+  display: none;
+  height: 100%;
+  padding: $base-spacing-unit * 2;
+  position: absolute;
+  top: 0;
+  width: 100%;
+
+  @media screen and (min-width: $wall-start) {
+    padding: $base-spacing-unit;
+  }
 }
 
 .project-heading {
@@ -55,20 +72,5 @@
 
   @media screen and (min-width: $wall-start) {
     font-size: em($size-alpha, $base-font-size);
-  }
-}
-
-.project-details {
-  background-color: rgba($color-secondary, 0.8);
-  color: #fff;
-  display: none;
-  height: 100%;
-  padding: $base-spacing-unit * 2;
-  position: absolute;
-  top: 0;
-  width: 100%;
-
-  @media screen and (min-width: $wall-start) {
-    padding: $base-spacing-unit;
   }
 }

@@ -60,7 +60,6 @@
   }
 
   a {
-    padding-bottom: 1px;
     color: $color-primary;
 
     &:hover {
@@ -68,7 +67,7 @@
     }
 
     &:hover {
-      border-bottom: 1px solid $color-tertiary;
+      border-bottom: 2px solid $color-tertiary;
     }
   }
 }

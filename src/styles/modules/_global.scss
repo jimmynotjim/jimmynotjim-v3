@@ -157,6 +157,7 @@ body {
 
 .contact-form {
   font-family: $font-secondary;
+  font-size: $size-epsilon;
   @include grid-container;
 
   .form-fields {
@@ -168,7 +169,7 @@ body {
   }
 
   form {
-    background-color: #ffffff;
+    background-color: shade($color-background, 4%);
     border: 1px solid $color-bg-tinted;
     padding: $base-spacing-unit * 2;
 
@@ -192,7 +193,8 @@ body {
 
   input:not(.submit),
   textarea {
-    background-color: $color-background;
+    background-color: #fff;
+    border: 1px solid $color-bg-tinted;
   }
 
   .submit {

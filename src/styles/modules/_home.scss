@@ -20,7 +20,9 @@
     margin: 0 auto;
   }
 
-  @include grid-column(8, $neat-grid-large);
+  @include grid-media($neat-grid-large) {
+    @include grid-column(8);
+  }
 }
 
 .home-quote-text {
@@ -56,7 +58,9 @@
     max-width: 320px;
   }
 
-  @include grid-column(4, $neat-grid-large);
+  @include grid-media($neat-grid-large) {
+    @include grid-column(4);
+  }
 
   img {
     margin: 0 auto;

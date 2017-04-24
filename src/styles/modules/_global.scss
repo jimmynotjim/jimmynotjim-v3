@@ -1,5 +1,21 @@
+html {
+  background-color: $color-tertiary;
+}
+
 body {
   background-color: $color-background;
+
+  @media screen and (min-width: $lap-start) {
+    font-size: $size-delta;
+  }
+
+  @media screen and (min-width: $wall-start) {
+    font-size: $size-gamma;
+  }
+}
+
+.is-hidden {
+  @include hidden-text();
 }
 
 .site-content {
@@ -31,15 +47,10 @@ body {
   text-align: center;
 }
 
-.type-post {
-  @extend %cf;
-
+.type-post,
+.post {
   max-width: em(640px, $base-font-size);
-  margin: 0 auto 20px;
-}
-
-.post-edit-link {
-  position: absolute;
+  margin: 0 auto;
 }
 
 .post-header {

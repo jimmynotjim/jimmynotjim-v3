@@ -21,11 +21,18 @@
  * Better Image Replacement
  */
 @mixin hidden-text {
-  display: inline-block;
-  height: 0;
-  overflow: hidden;
-  text-indent: 110%;
-  white-space: nowrap;
+position: absolute;
+    width: 1px;
+    height: 1px;
+    border: 0;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    // `clip` is deprecated, but retained for safety in making sure that this
+    // utility works as expected for screenreaders. Comma-separated syntax is
+    // not used because space-separated is more backward-compatible,
+    // per https://developer.mozilla.org/en-US/docs/Web/CSS/clip
+    clip: rect(0 0 0 0);
 }
 
 

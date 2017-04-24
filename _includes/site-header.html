@@ -1,0 +1,17 @@
+<header role="banner"
+        class="site-header {% if page.layout == 'home' %}site-header--home{% endif %}">
+  <div class="global-wrapper">
+    <a href="{{ site.baseurl }}"
+       class="site-logo">
+      <img src="https://avatars0.githubusercontent.com/u/1280430?v=3&s=460">
+      <span class="is-hidden">{{ site.title }}</span>
+    </a>
+    <nav class="site-nav">
+      <ul class="site-nav-list">
+        {% for nav-item in site.data.site-nav %}
+          <li><a href="{{ nav-item.href }}">{{ nav-item.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
+</header>

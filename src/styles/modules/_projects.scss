@@ -23,7 +23,9 @@
     }
   }
 
-  @include grid-column(1, $neat-grid-projects-lap);
+  @include grid-media($neat-grid-projects-lap) {
+    @include grid-column(1);
+  }
 
   @include grid-media($neat-grid-projects-desk) {
     @include grid-column(1);

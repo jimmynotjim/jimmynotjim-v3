@@ -106,7 +106,7 @@ body {
     width: 100px;
   }
 
-  @media screen and (min-width: $lap-start) {
+  @media screen and (min-width: $wall-start) {
     font-size: $size-delta;
 
     &:after {

@@ -3,7 +3,7 @@ layout: post
 title:  "What is Craftsmanship?"
 date:   2015-02-04 00:00:01 -0500
 categories: writing
-subtitle: "The truth is it's multilayered and even a little bit different for each of us."
+subtitle: "The truth is it's multilayered and even a little bit different for each of us"
 ---
 
 _Yesterday, my friend [Alex](https://twitter.com/retinart) sent an email discussing craft and asking what craftsmanship meant to his subscribers. As I began putting together a reply I realized this is a topic worthy of a larger discussion. Instead of locking it away in my email, I decided to expand on my response and publish it for everyone to read, think about, and post their own thoughts if they wish._

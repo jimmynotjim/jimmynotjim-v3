@@ -36,7 +36,7 @@
 
   @media screen and (min-width: $desk-start) {
     &:nth-child(4) {
-      @include grid-shift(4);
+      margin-left: (100 / 3) * 1%;
     }
   }
 }

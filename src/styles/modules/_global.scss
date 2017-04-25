@@ -68,7 +68,7 @@ body {
 }
 
 .preview-title {
-  margin-bottom: 0;
+  margin-bottom: $half-spacing-unit;
 }
 
 .post-author {
@@ -90,12 +90,14 @@ body {
 .post-sub-title,
 .post-excerpt {
   font-family: $font-secondary;
-  font-size: $size-zeta;
-  line-height: 1;
+  font-size: $size-epsilon;
+}
+
+.post-excerpt {
+  color: $color-primary;
 }
 
 .post-sub-title {
-  font-size: $size-epsilon;
   text-align: center;
 
   &:after {

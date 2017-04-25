@@ -12,7 +12,7 @@ Before I made the switch my site had been static php with everything manually ft
 
 Still wanting to work in the open, I came up with a plan to have two remote repos, with work happening on branches within the private repo and then doing limited merges to the public one whenever I finished an update. That worked well for a while, till I made the mistake you’re never supposed to make, forgetting to squash the merge commit thus leaving the history containing those credentials. I was extremely lucky to even notice, it’s not something that’s easily seen, but when I went to my site to see if my git activity module updated I thought “why the hell is there a commit for sensitive production files from 2 minutes ago?” Oh shit!
 
-<img src="{{ site.baseurl }}/dist/images/Git-Activity.png" alt="Git Activity" class="aligncenter" id="exifviewer-img-1" exifid="56974376" oldsrc="{{ site.baseurl }}/dist/images/Git-Activity.png">
+![Git Activity]({{ site.baseurl }}/dist/images/Git-Activity.png){:class="aligncenter"}
 
 Within another two minutes my site was showing something else entirely, the homepage for some SEO service called Semalt (http://semalt.com/). I had heard of bots trolling Github for leaked credentials but this seemed insane. Four minutes? Four minutes from the leak to someone taking control of my site? How is that even possible?
 

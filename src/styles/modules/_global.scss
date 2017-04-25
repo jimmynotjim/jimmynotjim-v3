@@ -159,6 +159,15 @@ body {
   font-family: $font-secondary;
   font-size: $size-epsilon;
   @include grid-container;
+  @include grid-collapse;
+
+  @include grid-media($neat-grid-lap) {
+    @include grid-collapse;
+  }
+
+  @include grid-media($neat-grid-desk) {
+    @include grid-collapse;
+  }
 
   .form-fields {
     @extend %cf;
@@ -173,7 +182,14 @@ body {
     border: 1px solid $color-bg-tinted;
     padding: $base-spacing-unit * 2;
 
-    @include grid-media($neat-grid-large) {
+    @include grid-column(12);
+
+    @include grid-media($neat-grid-lap) {
+      @include grid-column(10);
+      @include grid-shift(1);
+    }
+
+    @include grid-media($neat-grid-desk) {
       @include grid-column(8);
       @include grid-shift(2);
     }

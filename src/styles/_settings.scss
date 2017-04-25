@@ -66,11 +66,22 @@ $neat-grid: (
   color: $visual-grid-color
 );
 
-$neat-grid-large: (
+$neat-grid-lap: (
+  columns: $grid-columns,
+  gutter: $base-spacing-unit * 2,
+  media: "screen and (min-width: $lap-start)"
+);
+
+$neat-grid-desk: (
   columns: $grid-columns,
   gutter: $base-spacing-unit * 3,
-  color: $visual-grid-color,
   media: "screen and (min-width: $desk-start)"
+);
+
+$neat-grid-projects: (
+  columns: 1,
+  gutter: 0,
+  media: screen and all
 );
 
 $neat-grid-projects-lap: (

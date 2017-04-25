@@ -3,7 +3,7 @@
     margin: 0 auto $base-spacing-unit * 2;
   }
 
-  @include grid-media($neat-grid-large) {
+  @include grid-media($neat-grid-desk) {
     @include grid-container;
     @include grid-collapse;
 
@@ -20,7 +20,7 @@
     margin: 0 auto;
   }
 
-  @include grid-media($neat-grid-large) {
+  @include grid-media($neat-grid-desk) {
     @include grid-column(8);
   }
 }
@@ -58,7 +58,7 @@
     max-width: 320px;
   }
 
-  @include grid-media($neat-grid-large) {
+  @include grid-media($neat-grid-desk) {
     @include grid-column(4);
   }
 

@@ -14,7 +14,7 @@ layout: default
   <ul class="preview-list preview-list--blog">
     {% for post in site.posts %}
       <li class="post-preview">
-        <a href="{{ post.url }}">
+        <a href="{{ site.github.url }}{{ post.url }}">
           <header class="preview-header">
             <h2 class="preview-title entry-title">{{ post.title }}</h2>
             <div class="preview-meta">

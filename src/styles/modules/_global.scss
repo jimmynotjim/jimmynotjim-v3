@@ -89,15 +89,13 @@ body {
 
 .post-sub-title,
 .post-excerpt {
-  color: $color-primary;
   font-family: $font-secondary;
-  font-size: $size-delta;
+  font-size: $size-zeta;
   line-height: 1;
-  font-weight: 600;
 }
 
 .post-sub-title {
-  font-size: $size-gamma;
+  font-size: $size-epsilon;
   text-align: center;
 
   &:after {
@@ -105,7 +103,15 @@ body {
     content: '';
     display: block;
     margin: 30px auto 0;
-    width: 160px;
+    width: 100px;
+  }
+
+  @media screen and (min-width: $lap-start) {
+    font-size: $size-delta;
+
+    &:after {
+      width: 130px;
+    }
   }
 }
 
@@ -178,7 +184,7 @@ body {
   }
 
   form {
-    background-color: shade($color-background, 4%);
+    background-color: shade($color-background, 1%);
     border: 1px solid $color-bg-tinted;
     padding: $base-spacing-unit * 2;
 
@@ -203,14 +209,20 @@ body {
   label {
     text-transform: uppercase;
     font-weight: 600;
-    font-size: $size-zeta;
+    font-size: $size-milli;
     letter-spacing: 0.05em;
   }
 
   input:not(.submit),
   textarea {
-    background-color: #fff;
+    background-color: tint($color-background, 40%);
     border: 1px solid $color-bg-tinted;
+
+    &:focus {
+      background-color: #fff;
+      outline: 1px solid $color-tertiary;
+      border-color: $color-tertiary;
+    }
   }
 
   .submit {
@@ -220,7 +232,6 @@ body {
     padding: $base-spacing-unit * 0.75 $base-spacing-unit * 3;
     font-family: $font-secondary;
     letter-spacing: 0.05em;
-    font-weight: 600;
   }
 
   @media screen and (min-width: $wall-start) {

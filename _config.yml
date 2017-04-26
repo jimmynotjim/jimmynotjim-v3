@@ -21,6 +21,10 @@ description: > # this means to ignore newlines until "baseurl:"
 twitter_username: jimmynotjim
 github_username:  jimmynotjim
 permalink: pretty
+collections:
+  writing:
+    output: true,
+    permalink: /:collection/:path/
 
 typekit_code: fxk6cse
 ga_code:      UA-15192663-6

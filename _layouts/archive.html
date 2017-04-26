@@ -12,7 +12,7 @@ layout: default
     {{ content }}
   </div>
   <ul class="preview-list preview-list--blog">
-    {% for post in site.posts %}
+    {% for post in site.writing reversed %}
       <li class="post-preview">
         <a href="{{ site.github.url }}{{ post.url }}">
           <header class="preview-header">

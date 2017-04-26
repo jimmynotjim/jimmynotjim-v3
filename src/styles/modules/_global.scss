@@ -217,6 +217,7 @@ body {
 
   input:not(.submit),
   textarea {
+    -webkit-appearance: none;
     background-color: tint($color-background, 40%);
     border: 1px solid $color-bg-tinted;
 

@@ -257,3 +257,25 @@ body {
     }
   }
 }
+
+@mixin flexible-container( $width: 16, $height: 9 ) {
+  $ratio: ( $height / $width ) * 100;
+
+  position: relative;
+  padding-bottom: $ratio * 1%;
+  height: 0;
+}
+
+.video-embed {
+  @include flexible-container(640, 360);
+}
+
+.video-embed__inner {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+

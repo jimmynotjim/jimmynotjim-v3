@@ -16,4 +16,6 @@ In the end, it was Sen. Elizabeth Warren, the brainchild of the CFPB, that convi
 
 I can’t and I won’t. So here I am, saying goodbye to the people I’ve known and worked alongside for the last three years. I’m a bit nervous (ever perpetually felt like you have to puke?), but I have faith in the future ahead of me. Maybe one day, Sean will be presented with an even tougher choice, and I’ll have inspired him to make the right one.
 
-<iframe width="640" height="360" class="aligncenter" src="http://www.youtube.com/embed/NHXT2bNSV4g" frameborder="0" allowfullscreen=""></iframe>
+<div class="video-embed">
+  <iframe class="video-embed__inner" src="http://www.youtube.com/embed/NHXT2bNSV4g" frameborder="0" allowfullscreen="true"></iframe>
+</div>

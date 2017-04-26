@@ -22,4 +22,8 @@ I’ll never be able to put in the number of hours many of these film makers alr
 
 Age has nothing to do with success, only the will to push through when you’re ready to quit can determine that. Ira Glass illustrates this best as The Gap, that giant canyon between your taste and quality work. What’s funny is I’m not so sure you can ever cross The Gap because the other side is constantly shifting farther away. Still, I watch this video regularly to remind myself to push on, to keep fighting, that eventually, I might close The Gap, even as it grows wider.
 
-<iframe width="640" height="360" class="aligncenter" src="https://player.vimeo.com/video/85040589" frameborder="0" allowfullscreen=""></iframe>
+
+
+<div class="video-embed">
+  <iframe class="video-embed__inner" src="https://player.vimeo.com/video/85040589" frameborder="0" allowfullscreen="true"></iframe>
+</div>

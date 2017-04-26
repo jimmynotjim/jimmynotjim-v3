@@ -12,6 +12,7 @@ gulp.task( 'serve', function() {
     port: port,
     server: {
       baseDir: config.site
-    }
+    },
+    open: false
   } );
 } );

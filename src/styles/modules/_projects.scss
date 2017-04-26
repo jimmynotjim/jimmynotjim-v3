@@ -14,11 +14,12 @@
 
   &:hover {
     .project-image {
-      @include filter( blur(2px) );
+      filter: blur(1.5px);
+      transform: scale(1.015);
     }
 
-    .project-details {
-      display: flex;
+    .project-overlay {
+      opacity: 1;
     }
   }
 
@@ -41,42 +42,59 @@
   }
 }
 
-.project-link {
-  display: block;
-  border-bottom: none!important;
-}
-
 .project-image {
   display: block;
+  transition: transform 0.2s ease-in,
+              filter 0.2s ease-in;
 }
 
-.project-details {
+.project-overlay {
   align-items: center;
   background-color: rgba($color-secondary, 0.8);
+  border: none !important;
   color: #fff;
   display: flex;
-  display: none;
   height: 100%;
   padding: $base-spacing-unit * 2;
   position: absolute;
   top: 0;
+  opacity: 0;
   width: 100%;
+  transition: opacity 0.2s ease-in;
+
+  &:hover {
+    color: #fff;
+  }
 
   @media screen and (min-width: $wall-start) {
     padding: $base-spacing-unit;
   }
 }
 
+.project-details {
+  text-align: center;
+  width: 100%;
+}
+
 .project-heading {
   font-family: $font-secondary;
   font-size: em($size-beta, $base-font-size);
-  font-weight: 900;
+  font-weight: 700;
   letter-spacing: 0.05em;
-  margin-bottom: 0;
+  margin-bottom: $base-spacing-unit * 3;
   text-align: center;
   width: 100%;
 
   @media screen and (min-width: $wall-start) {
     font-size: em($size-alpha, $base-font-size);
+  }
+}
+
+.btn--project {
+  border-color: #fff;
+
+  &:hover {
+    background-color: $color-secondary;
+    border-color: #fff;
   }
 }

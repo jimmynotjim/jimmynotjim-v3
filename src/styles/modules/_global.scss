@@ -228,12 +228,8 @@ body {
   }
 
   .submit {
-    border-radius: 4px;
     display: block;
     margin: 0 auto;
-    padding: $base-spacing-unit * 0.75 $base-spacing-unit * 3;
-    font-family: $font-secondary;
-    letter-spacing: 0.05em;
   }
 
   @media screen and (min-width: $wall-start) {

@@ -12,11 +12,14 @@
   border: none;
 
   background-color: $color-button-regular;
+  border-radius: 4px;
   color: #fff;
   cursor: pointer;
   display: inline-block;
-  font-weight: 500;
+  font-family: $font-secondary;
+  font-size: $size-epsilon;
   margin: 0;
+  letter-spacing: 0.05em;
   line-height: 1;
   text-align: center;
   text-decoration: none;
@@ -24,12 +27,13 @@
    * Set padding in ems so we can change the size of a button by merely
    * altering its `font-size`.
    */
-  padding: em(22px, $base-font-size) em(8px, $base-font-size) em(25px, $base-font-size);
+  padding: em($base-spacing-unit * 0.75, $base-font-size) em($base-spacing-unit * 3, $base-font-size);
 
   &:hover {
     background-color: $color-button-active;
     color: #fff;
     text-decoration: none;
+    border: none;
   }
 }
 
@@ -47,7 +51,6 @@
 
 .btn--full {
   display: block;
-  text-align: center;
   /**
    * The following is so that `.btn-full` works properly on `input`s as well
    * as `a`s.
@@ -55,4 +58,14 @@
   padding-right: 0;
   padding-left: 0;
   width: 100%;
+}
+
+.btn--outline {
+  background-color: transparent;
+  border: 1px solid $color-tertiary;
+
+  &:hover {
+    background-color: transparent;
+    border: 1px solid $color-tertiary-shaded;
+  }
 }

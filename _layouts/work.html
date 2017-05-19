@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+<article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title | escape }}</h1>
+  </header>
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+  <ul class="preview-list preview-list--blog">
+    {% for post in site.work reversed %}
+      <li class="post-preview">
+        <a href="{{ site.github.url }}{{ post.url }}">
+          <header class="preview-header">
+            <h2 class="preview-title entry-title">{{ post.title }}</h2>
+            <div class="preview-meta">
+              <time class="post-date" datetime="{{ post.date | date_to_xmlschema }}">
+                {% assign date_format = site.minima.date_format | default: "%B %-d, %Y" %}
+                {{ post.date | date: date_format }}
+              </time>
+            </div>
+          </header>
+          <p class="post-excerpt">{{ post.subtitle }}</p>
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+
+</article>

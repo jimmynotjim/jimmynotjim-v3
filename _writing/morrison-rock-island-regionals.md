@@ -11,7 +11,7 @@ The Mustangs couldn’t put things together yesterday evening in a 15-0 loss to 
 
 The Alleman's Jono Berry on the other hand had complete control of the game, giving up only four hits with five strikeouts and no walks. The closest the Mustangs would come to scoring on Berry was when Fischbach took third after making it to second on a wild throw to first.
 
-It was an unfortunate final game for Morrison, who struggled to get playing time due to weather throughout the Spring.
+It was an unfortunate end to the season for Morrison, who struggled to get playing time due to weather throughout the Spring.
 
 <a class="link-five-hundred" href='https://500px.com/photo/212605983/morrison-vs-rock-island-regionals-by-james-wilson' alt='Morrison vs Rock Island Regionals by James Wilson on 500px.com'><img src='https://drscdn.500px.org/photo/212605983/m%3D900/59cd4f7e8b62f81e25ca9bbc7e268cee' alt='Morrison vs Rock Island Regionals by James Wilson on 500px.com'></a>
 

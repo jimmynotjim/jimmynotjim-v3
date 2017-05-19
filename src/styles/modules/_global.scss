@@ -281,3 +281,7 @@ body {
 .post a {
   overflow-wrap: break-word;
 }
+
+iframe {
+  margin-bottom: $base-spacing-unit;
+}

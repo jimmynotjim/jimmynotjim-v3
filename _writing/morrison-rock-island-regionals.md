@@ -63,5 +63,3 @@ It was an unfortunate end to the season for Morrison, who struggled to get playi
 
 _For usage rights of text or images, please email me at [jimmynotjim@me.com](mailto:jimmynotjim@me.com)_
 {:class="smallprint"}
-
-<script type='text/javascript' src='https://500px.com/embed.js'></script>

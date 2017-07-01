@@ -1,5 +1,5 @@
 ---
-layout: about
+layout: default
 title: Heya!
 permalink: /about/
 ---
@@ -13,3 +13,5 @@ Now for the boring stuff, you knew it had to come. I'm currently a Technology an
 Oh, and I would love to meet you for real. If you agree, you can reach me through the contact form below, or if you prefer email me at [jimmynotjim@me.com](mailto:jimmynotjim@me.com).
 
 If you read this far, congrats! I can't believe you got through the bit about the dinosaur.
+
+{% include contact.html %}

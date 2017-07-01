@@ -2,42 +2,58 @@
   @extend %cf;
   border-top: 4px solid $color-tertiary;
   padding-top: $base-spacing-unit;
+  background-color: $color-primary;
+  font-family: $font-secondary;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.24em;
 
   @media screen and (min-width: $lap-start) {
     padding-top: $half-spacing-unit;
     padding-bottom: $half-spacing-unit;
   }
-}
 
-.site-header--home {
-  .site-logo {
-    @include hidden-text();
+  .home & {
+    background-color: rgba( $color-primary, 0.5 );
   }
 
-  .site-nav-list {
-    @media screen and (min-width: $lap-start) {
-      float: none;
+  a {
+    color: #fff;
+
+    &:hover {
+      color: #fff;
     }
   }
 }
 
 .site-logo {
-  display: block;
+  float: left;
+
+  &:hover {
+    border: none;
+
+    .site-logo_text {
+      border-bottom: 2px solid #fff;
+    }
+  }
+}
+
+.site-avatar {
+  display: inline-block;
   height: $base-spacing-unit * 4;
   width: $base-spacing-unit * 4;
-  margin: 0 auto $half-spacing-unit;
+  margin-right: $base-spacing-unit;
   border-radius: 50%;
-  overflow: hidden;
+  vertical-align: middle;
 
   @media screen and (min-width: $lap-start) {
     height: $base-spacing-unit * 2;
     width: $base-spacing-unit * 2;
-    float: left;
   }
+}
 
-  img {
-    display: block;
-  }
+.site-nav {
+  float: right;
 }
 
 .site-nav-list {
@@ -48,8 +64,7 @@
   }
 
   text-align: center;
-  font-size: $size-delta;
-  padding: $half-spacing-unit;
+  padding: $half-spacing-unit + 3px $half-spacing-unit;
 
   li {
     display: inline-block;
@@ -59,15 +74,7 @@
     }
   }
 
-  a {
-    color: $color-primary;
-
-    &:hover {
-      color: $color-tertiary;
-    }
-
-    &:hover {
-      border-bottom: 2px solid $color-tertiary;
-    }
+  a:hover {
+    border-bottom: 2px solid #fff;
   }
 }

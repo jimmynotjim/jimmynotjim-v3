@@ -1,6 +1,20 @@
 .site-footer {
-  background-color: $color-tertiary;
+  background-color: $color-primary;
   color: #fff;
   padding-bottom: $base-spacing-unit * 1.5;
   padding-top: $base-spacing-unit * 1.5;
+
+  .home & {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba( shade( $color-primary, 20 ), 0.6 );
+  }
+
+  .legal {
+    font-family: $font-secondary;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 0.24em;
+  }
 }

@@ -2,7 +2,7 @@
   @extend %cf;
   border-top: 4px solid $color-tertiary;
   padding-top: $base-spacing-unit;
-  background-color: $color-primary;
+  background-color: $color-secondary;
   font-family: $font-secondary;
   text-transform: uppercase;
   font-size: 12px;
@@ -14,7 +14,7 @@
   }
 
   .home & {
-    background-color: rgba( $color-primary, 0.5 );
+    background-color: rgba( $color-secondary, 0.5 );
   }
 
   a {

@@ -1,5 +1,8 @@
-- title: "Work"
+- title: "Store"
   href: "/"
+
+- title: "Portfolio"
+  href: "/portfolio/"
 
 - title: "Writing"
   href: "/writing/"

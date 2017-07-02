@@ -1,0 +1,50 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie10 lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie10 lt-ie9" lang="en"> <![endif]-->
+<!--[if IE 9]> <html class="no-js lt-ie10" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+  {% include head.html %}
+
+  <body>
+
+    {% include site-header.html %}
+
+    <main role="main" class="site-content">
+
+      <div class="global-wrapper">
+
+        <article class="content">
+
+          <h2>Wyoming</h2>
+
+          <p>
+            Selected images from Wyoming
+          </p>
+
+          <ul class="portfolio-list">
+
+            {% for photo in site.data.portfolio %}
+            <li class="portfolio-list__item">
+
+                <a href="{{ photo.url }}" class="portfolio-list__link">
+                  <img src="{{ site.github.url }}{{ photo.preview }}" alt="Preview of {{ photo.name }}" class="portfolio-list__image" />
+                  <h3 class="portfolio-list__name">{{ photo.name }}</h3>
+                </a>
+
+            </li>
+            {% endfor %}
+
+          </ul>
+        </article>
+
+      </div>
+
+    </main>
+
+    {% include footer.html %}
+
+  <script src="{{ site.github.url }}/dist/js/main.min.js"></script>
+  </body>
+</html>

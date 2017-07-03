@@ -1,0 +1,60 @@
+.store-list {
+  @extend %cf;
+  @extend %unstyled-list;
+
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: $base-spacing-unit;
+
+  @media screen and (min-width: $lap-start) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media screen and (min-width: $desk-start) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media screen and (min-width: $wall-start) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.store-list__item {
+  overflow: hidden;
+  position: relative;
+
+  &:hover {
+    .store-list__image {
+      transform: scale(1.07);
+    }
+
+    .store-list__name {
+      background-color: rgba($color-secondary, 0.7);
+    }
+  }
+}
+
+.store-list__image {
+  display: block;
+  transition: transform 0.2s ease-in;
+}
+
+.store-list__name {
+  font-family: $font-secondary;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.24em;
+
+  background-color: rgba($color-secondary, 0.4);
+  padding: $base-spacing-unit;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 0;
+  width: 100%;
+  transition: background-color 0.2s ease-in;
+
+  a & {
+    color: #fff;
+  }
+}

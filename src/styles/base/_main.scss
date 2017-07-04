@@ -16,3 +16,38 @@ body {
   background-color: #fff;
   font-size: em($base-font-size, 16px);
 }
+
+.site-content {
+  padding-bottom: $base-spacing-unit * 3;
+  padding-top: $base-spacing-unit * 3;
+
+  // min-height: calc(100vh - 138px);
+  //overflow: scroll;
+
+  .home &,
+  .portfolio & {
+    padding: 0;
+  }
+
+  .portfolio & {
+    background-color: $color-secondary;
+  }
+}
+
+.global-wrapper {
+  @extend %cf;
+
+  margin: 0 auto;
+  padding-left: $base-spacing-unit;
+  padding-right: $base-spacing-unit;
+
+  @media screen and (min-width: $lap-start) {
+    padding-left: $base-spacing-unit * 2;
+    padding-right: $base-spacing-unit * 2;
+  }
+
+  @media screen and (min-width: $desk-start) {
+    padding-left: $base-spacing-unit * 3;
+    padding-right: $base-spacing-unit * 3;
+  }
+}

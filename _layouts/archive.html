@@ -1,23 +1,35 @@
 ---
 layout: default
 ---
+<article class="page">
 
+  <header class="page-header">
+    <h1 class="page-title">{{ page.title | escape }}</h1>
+  </header>
 
-<ul class="unstyled-list">
-  {% for post in site.writing reversed %}
-    <li class="post-preview">
-      <a href="{{ site.github.url }}{{ post.url }}">
-        <header class="preview-header">
-          <h2 class="preview-title entry-title">{{ post.title }}</h2>
-          <div class="preview-meta">
-            <time class="post-date" datetime="{{ post.date | date_to_xmlschema }}">
-              {% assign date_format = site.minima.date_format | default: "%B %-d, %Y" %}
-              {{ post.date | date: date_format }}
-            </time>
-          </div>
-        </header>
-        <p class="preview-excerpt">{{ post.subtitle }}</p>
-      </a>
-    </li>
-  {% endfor %}
-</ul>
+  <div class="page-content">
+
+    {{ content }}
+
+    <ul class="unstyled-list preview-list">
+      {% for post in site.writing reversed %}
+        <li class="post-preview">
+          <a href="{{ site.github.url }}{{ post.url }}">
+            <header class="preview-header">
+              <h2 class="preview-title entry-title">{{ post.title }}</h2>
+              <div class="preview-meta">
+                <time class="post-date" datetime="{{ post.date | date_to_xmlschema }}">
+                  {% assign date_format = site.minima.date_format | default: "%B %-d, %Y" %}
+                  {{ post.date | date: date_format }}
+                </time>
+              </div>
+            </header>
+            <p class="preview-excerpt">{{ post.subtitle }}</p>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+
+  </div>
+
+</article>

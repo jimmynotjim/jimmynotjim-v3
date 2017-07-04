@@ -1,0 +1,34 @@
+.preview-list {
+  border-top: 1px solid $color-bg-tinted;
+  padding-top: 40px;
+}
+
+.post-preview {
+  margin-bottom: em($base-spacing-unit * 2, $base-font-size);
+  border-bottom: 1px solid $color-bg-tinted;
+  padding-bottom: 20px;
+}
+
+.preview-header {
+  margin-bottom: em($half-spacing-unit, $base-font-size);
+}
+
+.preview-title {
+  margin-bottom: em($base-spacing-unit * 0.25, $size-delta);
+  font-family: $font-secondary;
+  font-size: em($size-delta, $base-font-size);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.preview-meta {
+  color: tint($color-secondary, 25%);
+  font-size: em($size-epsilon, $base-font-size);
+}
+
+.preview-excerpt {
+  color: $color-primary;
+  font-family: $font-secondary;
+  font-size: em(19px, $base-font-size);
+  font-weight: 300;
+}

@@ -105,9 +105,9 @@ $size-kilo:     44px; // h1-size
 
 $size-alpha:    36px;
 $size-beta:     30px; // h2-size
-$size-gamma:    24px; // h3-size
+$size-gamma:    26px; // h3-size
 $size-delta:    20px; // h4-size
-$size-epsilon:  17px; // h5-site
+$size-epsilon:  18px; // h5-site
 $size-zeta:     15px; // h6-size
 
 $size-milli:    13px;
@@ -150,7 +150,7 @@ $font-secondary:  'Lato', 'Open Sans', 'Helvetica Neue', sans-serif;
 $color-primary:         #25323d;
 $color-secondary:       #10273e; //#0f2d4a; //#0c3257;
 $color-tertiary:        #c93b2b;
-$color-tertiary-shaded: #911f12;
+$color-tertiary-shaded: #b52919; //#911f12;
 $color-background:      #ffffff;
 $color-bg-tinted:       shade($color-background, 15%);
 $color-text:            $color-primary;

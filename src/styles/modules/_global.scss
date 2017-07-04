@@ -1,19 +1,4 @@
-html {
-  background-color: $color-secondary;
-}
 
-body {
-  background-color: #fff;
-  font-size: $size-epsilon;
-
-  @media screen and (min-width: $lap-start) {
-    font-size: $size-delta;
-  }
-
-  @media screen and (min-width: $wall-start) {
-    font-size: $size-gamma;
-  }
-}
 
 .is-hidden {
   @include hidden-text();
@@ -75,37 +60,47 @@ body {
   margin-bottom: 60px;
 }
 
-.preview-header {
-  margin-bottom: 10px;
-}
-
 .page-title,
 .post-title {
   font-family: $font-secondary;
-  font-weight: 400;
-  font-size: $size-gamma;
+  font-size: em($size-gamma, $base-font-size);
   letter-spacing: 0.24em;
   margin-bottom: 40px;
   text-align: center;
   text-transform: uppercase;
 }
 
+.post-preview {
+  margin-bottom: em($base-spacing-unit * 2, $base-font-size);
+}
+
+.preview-header {
+  margin-bottom: em($half-spacing-unit, $base-font-size);
+}
+
 .preview-title {
-  margin-bottom: $half-spacing-unit;
+  margin-bottom: em($base-spacing-unit * 0.25, $size-delta);
+  font-family: $font-secondary;
+  font-size: em($size-delta, $base-font-size);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
 }
 
-.post-author {
-  display: none;
-}
-
-.post-meta,
 .preview-meta {
-  color: tint($color-primary, 10%);
-  font-size: $size-zeta;
+  font-family: $font-secondary;
+  font-size: em($size-zeta, $base-font-size);
+  color: $color-primary;
+}
+
+.preview-excerpt {
+  color: $color-primary;
 }
 
 .post-meta {
-  font-size: $size-zeta;
+  font-size: $size-epsilon;
+}
+
+.post-meta {
   margin-bottom: 40px;
   text-align: center;
 }
@@ -151,17 +146,6 @@ body {
   display: block;
   margin: 60px auto 0;
   width: 160px;
-}
-
-.preview-list {
-  @extend %unstyled-list;
-
-  margin: 0 auto 80px;
-  max-width: em(640px, $base-font-size);
-}
-
-.post-preview {
-  margin-bottom: 40px;
 }
 
 .post-pagination {

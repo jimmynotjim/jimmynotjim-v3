@@ -3,7 +3,7 @@ layout: default
 ---
 
 
-<ul class="preview-list preview-list--blog">
+<ul class="unstyled-list">
   {% for post in site.writing reversed %}
     <li class="post-preview">
       <a href="{{ site.github.url }}{{ post.url }}">
@@ -16,7 +16,7 @@ layout: default
             </time>
           </div>
         </header>
-        <p class="post-excerpt">{{ post.subtitle }}</p>
+        <p class="preview-excerpt">{{ post.subtitle }}</p>
       </a>
     </li>
   {% endfor %}

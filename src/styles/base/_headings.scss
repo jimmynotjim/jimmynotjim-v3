@@ -9,14 +9,13 @@
  * heading hierarchy.
  */
 h1, h2, h3, h4, h5, h6 {
-  font-family: $font-primary;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 1.1;
 }
 
 h1 {
   font-size: em($size-kilo, $base-font-size);
-  margin-bottom: em($base-spacing-unit, $size-alpha);
+  margin-bottom: em($base-spacing-unit, $size-kilo);
 }
 
 h2 {

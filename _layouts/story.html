@@ -1,32 +1,93 @@
----
-layout: default
----
-<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie10 lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie10 lt-ie9" lang="en"> <![endif]-->
+<!--[if IE 9]> <html class="no-js lt-ie10" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 
-  <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
-    <p class="post-meta">
-      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        {% assign date_format = site.minima.date_format | default: "%B %-d, %Y" %}
-        {{ page.date | date: date_format }}
-      </time>
-      {% if page.author %}
-        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>
-      {% endif %}
-      {% if page.location %}
-        • <span>{{ page.location }}</span>
-      {% endif %}
-    </p>
-    {% if page.subtitle %}
-      <p class="post-sub-title">{{ page.subtitle }}</p>
-    {% endif %}
-  </header>
+  {% include head.html %}
 
-  <div class="post-content" itemprop="articleBody">
-    {{ content }}
-  </div>
+  <body >
 
-  {% if site.disqus.shortname %}
-    {% include disqus_comments.html %}
-  {% endif %}
-</article>
+    {% include site-header.html %}
+
+    <main role="main" class="site-content">
+
+      <div class="global-wrapper">
+        <div class="content">
+
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+          {% if page.featured_image %}
+          <div class="featured-image">
+            <img src="{{ page.featured_image }}"/>
+          </div>
+          {% endif %}
+
+          <header class="post-header">
+            <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
+            <p class="post-meta">
+              <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+                {% assign date_format = site.minima.date_format | default: "%B %-d, %Y" %}
+                {{ page.date | date: date_format }}
+              </time>
+              {% if page.author %}
+                • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>
+              {% endif %}
+              {% if page.location %}
+                • <span>{{ page.location }}</span>
+              {% endif %}
+            </p>
+            {% if page.subtitle %}
+              <p class="post-sub-title">{{ page.subtitle }}</p>
+            {% endif %}
+          </header>
+
+          <div class="post-content" itemprop="articleBody">
+            {{ content }}
+          </div>
+
+          {% if page.gallery %}
+
+          <div class="carousel carousel--story"
+               data-flickity='{
+                "imagesLoaded": true,
+                "percentPosition": false,
+                "wrapAround": true,
+                "lazyLoad": 2,
+                "pageDots": false }'>
+
+            {% for photo in site.data.[page.gallery] %}
+
+            <img data-flickity-lazyload="{{ site.github.url }}{{ photo.preview }}"
+                 alt="{{ photo.name }}" />
+
+            {% endfor %}
+
+          </div>
+
+          <p class="smallprint"><em>For usage rights of text or images, please email me at <a href="mailto:jimmynotjim@me.com">jimmynotjim@me.com</a></em></p>
+
+          <link rel="stylesheet" href="https://npmcdn.com/flickity@2/dist/flickity.css">
+          <script src="https://npmcdn.com/flickity@2/dist/flickity.pkgd.js"></script>
+
+
+          {% endif %}
+
+          {% if site.disqus.shortname %}
+            {% include disqus_comments.html %}
+          {% endif %}
+        </article>
+
+
+        </div>
+      </div>
+
+    </main>
+
+    {% include footer.html %}
+
+  <script src="{{ site.github.url }}/dist/js/main.min.js"></script>
+  </body>
+</html>
+

@@ -1,23 +1,38 @@
 [
    {
-    "name": "Lonely Island",
-    "description": "",
-    "url": "",
-    "preview": "/dist/images/portfolio/lonely-island-sq.jpg"
-  }, {
     "name": "Moulton Sunset",
     "description": "",
     "url": "",
-    "preview": "/dist/images/portfolio/moulton-sunset-sq.jpg"
+    "preview": "/dist/images/portfolio/moulton-sunset.jpg"
   }, {
     "name": "His Domain",
     "description": "",
     "url": "",
-    "preview": "/dist/images/portfolio/his-domain-sq.jpg"
+    "preview": "/dist/images/portfolio/his-domain.jpg"
   }, {
     "name": "Illuminated Peaks",
     "description": "",
     "url": "",
-    "preview": "/dist/images/portfolio/illuminated-peaks-sq.jpg"
+    "preview": "/dist/images/portfolio/illuminated-peaks.jpg"
+  }, {
+    "name": "Incoming",
+    "description": "",
+    "url": "",
+    "preview": "/dist/images/portfolio/incoming.jpg"
+  }, {
+    "name": "Frosty Sunrise",
+    "description": "",
+    "url": "",
+    "preview": "/dist/images/portfolio/frosty-sunrise.jpg"
+  }, {
+    "name": "Larry and the Howard Brothers",
+    "description": "",
+    "url": "",
+    "preview": "/dist/images/portfolio/larry-howard-bros.jpg"
+  }, {
+    "name": "Daybreak on the Farm",
+    "description": "",
+    "url": "",
+    "preview": "/dist/images/portfolio/daybreak-farm.jpg"
   }
 ]

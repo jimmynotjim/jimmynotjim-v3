@@ -1,20 +1,32 @@
 .site-footer {
   background-color: $color-secondary;
   color: #fff;
-  padding-bottom: $base-spacing-unit * 1.5;
-  padding-top: $base-spacing-unit * 1.5;
+  padding-bottom: $base-spacing-unit;
+  padding-top: $base-spacing-unit;
+
+  @media screen and (min-width: $lap-start) {
+    padding-bottom: $base-spacing-unit * 1.5;
+    padding-top: $base-spacing-unit * 1.5;
+  }
 
   .home & {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
     background-color: rgba( shade( $color-secondary, 20 ), 0.6 );
+  }
+
+  .home & {
+    bottom: 0;
+    position: absolute;
+    width: 100%;
   }
 
   .legal {
     font-family: $font-secondary;
-    text-transform: uppercase;
-    font-size: 12px;
+    font-size: 10px;
     letter-spacing: 0.24em;
+    text-transform: uppercase;
+
+    @media screen and (min-width: $lap-start) {
+      font-size: 12px;
+    }
   }
 }

@@ -7,44 +7,39 @@
 
   {% include head.html %}
 
-  <body>
+  <body class="portfolio">
 
     {% include site-header.html %}
 
     <main role="main" class="site-content">
 
-      <div class="global-wrapper">
-
         <article class="content">
 
-          <h2>Wyoming</h2>
-
-          <p>
-            Selected images from Wyoming
-          </p>
-
-          <ul class="portfolio-list">
+          <div class="carousel"
+               data-flickity='{
+                "imagesLoaded": true,
+                "percentPosition": false,
+                "wrapAround": true,
+                "lazyLoad": 2,
+                "pageDots": false }'>
 
             {% for photo in site.data.portfolio %}
-            <li class="portfolio-list__item">
 
-                <a href="{{ photo.url }}" class="portfolio-list__link">
-                  <img src="{{ site.github.url }}{{ photo.preview }}" alt="Preview of {{ photo.name }}" class="portfolio-list__image" />
-                  <h3 class="portfolio-list__name">{{ photo.name }}</h3>
-                </a>
+            <img data-flickity-lazyload="{{ site.github.url }}{{ photo.preview }}"
+                 alt="{{ photo.name }}" />
 
-            </li>
             {% endfor %}
 
-          </ul>
-        </article>
+          </div>
 
-      </div>
+        </article>
 
     </main>
 
     {% include footer.html %}
 
+  <link rel="stylesheet" href="https://npmcdn.com/flickity@2/dist/flickity.css">
   <script src="{{ site.github.url }}/dist/js/main.min.js"></script>
+  <script src="https://npmcdn.com/flickity@2/dist/flickity.pkgd.js"></script>
   </body>
 </html>

@@ -39,7 +39,7 @@ $flexible-media:  true!default;
 /**
  * Set the breakpoints (set these to where your content breaks, not to specific screen sizes)
  */
-$lap-start:   620px!default;
+$lap-start:   700px!default;
 $desk-start:  1060px!default;
 $wall-start:  1200px!default;
 $palm-end:    $lap-start - 1px!default;

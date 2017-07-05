@@ -1,12 +1,11 @@
 .preview-list {
-  border-top: 1px solid $color-bg-tinted;
-  padding-top: 40px;
+  max-width: em(700px, $base-font-size);
+  margin: 0 auto;
 }
 
 .post-preview {
   margin-bottom: em($base-spacing-unit * 2, $base-font-size);
   border-bottom: 1px solid $color-bg-tinted;
-  padding-bottom: 20px;
 }
 
 .preview-header {
@@ -16,19 +15,31 @@
 .preview-title {
   margin-bottom: em($base-spacing-unit * 0.25, $size-delta);
   font-family: $font-secondary;
-  font-size: em($size-delta, $base-font-size);
+  font-size: em($size-epsilon, $base-font-size);
   letter-spacing: 0.15em;
   text-transform: uppercase;
+
+  @media screen and (min-width: $lap-start) {
+    font-size: em($size-delta, $base-font-size);
+  }
 }
 
 .preview-meta {
   color: tint($color-secondary, 25%);
-  font-size: em($size-epsilon, $base-font-size);
+  font-size: em($size-zeta, $base-font-size);
+
+  @media screen and (min-width: $lap-start) {
+    font-size: em($size-epsilon, $base-font-size);
+  }
 }
 
 .preview-excerpt {
   color: $color-primary;
   font-family: $font-secondary;
-  font-size: em(19px, $base-font-size);
+  font-size: em(17px, $base-font-size);
   font-weight: 300;
+
+  @media screen and (min-width: $lap-start) {
+    font-size: em(19px, $base-font-size);
+  }
 }

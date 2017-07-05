@@ -4,6 +4,11 @@
   @include hidden-text();
 }
 
+.profile-avatar {
+  border-radius: 50%;
+  display: block;
+}
+
 .legal {
   font-size: em($size-zeta, $base-font-size);
   margin-bottom: 0;
@@ -19,23 +24,51 @@
     margin-right: ($base-spacing-unit * -2);
     margin-bottom: ($base-spacing-unit * 3);
   }
+
+  @media screen and (min-width: $desk-start) {
+    margin-left: ($base-spacing-unit * -3);
+    margin-right: ($base-spacing-unit * -3);
+  }
 }
 
 .page-header {
-  margin-bottom: em($base-spacing-unit * 4, $base-font-size);
+  margin-bottom: em($base-spacing-unit * 3, $base-font-size);
+
+  .profile-avatar {
+    width: 250px;
+    margin: em($base-spacing-unit * 2)
+            auto
+            0;
+  }
+
+  @media screen and (min-width: $lap-start) {
+    margin-bottom: em($base-spacing-unit * 4, $base-font-size);
+
+    .profile-avatar {
+      width: 400px;
+      margin: em($base-spacing-unit * 3)
+              auto
+              0;
+    }
+  }
 }
 
 .post-header {
-  margin-bottom: em($base-spacing-unit * 3, $base-font-size);
+  max-width: em(700px, $base-font-size);
+  margin: 0 auto em($base-spacing-unit * 3, $base-font-size);
 }
 
 .page-title,
 .post-title {
   font-family: $font-secondary;
-  font-size: em($size-gamma, $base-font-size);
+  font-size: em($size-delta, $base-font-size);
   letter-spacing: 0.24em;
   text-align: center;
   text-transform: uppercase;
+
+  @media screen and (min-width: $lap-start) {
+    font-size: em($size-gamma, $base-font-size);
+  }
 }
 
 .post-title {
@@ -51,11 +84,14 @@
 
 .post-sub-title {
   font-family: $font-secondary;
+  font-size: em($size-epsilon, $base-font-size);
   font-weight: 300;
-}
-
-.post-sub-title {
   text-align: center;
+
+  @media screen and (min-width: $lap-start) {
+    font-size: em($size-delta, $base-font-size);
+  }
+
 
   &:after {
     border-bottom: 1px solid tint($color-primary, 75%);
@@ -78,6 +114,12 @@
 .page-content {
   max-width: em(700px, $base-font-size);
   margin: 0 auto;
+
+  @media screen and (min-width: $lap-start) {
+    p {
+      font-size: em($size-gamma, $base-font-size);
+    }
+  }
 }
 
 .entry-content:after {
@@ -121,6 +163,7 @@
 
   font-family: $font-secondary;
   font-size: $size-epsilon;
+  margin-top: $base-spacing-unit * 3;
 
   @include grid-media($neat-grid-lap) {
     @include grid-collapse;

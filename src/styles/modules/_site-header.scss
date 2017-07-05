@@ -33,15 +33,14 @@
       border-bottom: 2px solid #fff;
     }
   }
-}
 
-.site-avatar {
-  border-radius: 50%;
-  display: inline-block;
-  height: $base-spacing-unit * 2;
-  margin-right: $base-spacing-unit;
-  vertical-align: middle;
-  width: $base-spacing-unit * 2;
+  .profile-avatar {
+    display: inline-block;
+    height: $base-spacing-unit * 2;
+    margin-right: $base-spacing-unit;
+    vertical-align: middle;
+    width: $base-spacing-unit * 2;
+  }
 }
 
 .site-nav {

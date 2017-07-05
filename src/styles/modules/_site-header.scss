@@ -24,7 +24,19 @@
 }
 
 .site-logo {
-  float: left;
+  @media screen and (min-width: $lap-start){
+    float: left;
+  }
+
+  @media screen and (max-width: $palm-end) {
+    display: block;
+    width: 40px;
+    margin: 0 auto;
+
+    .site-logo_text {
+      @include hidden-text();
+    }
+  }
 
   &:hover {
     border: none;
@@ -37,33 +49,43 @@
   .profile-avatar {
     display: inline-block;
     height: $base-spacing-unit * 2;
-    margin-right: $base-spacing-unit;
-    vertical-align: middle;
     width: $base-spacing-unit * 2;
+
+    @media screen and (min-width: $lap-start) {
+      margin-right: $base-spacing-unit;
+      vertical-align: middle;
+    }
   }
 }
 
 .site-nav {
-  float: right;
-}
-
-.site-nav-list {
   @media screen and (min-width: $lap-start) {
     float: right;
   }
+}
 
-  padding: $half-spacing-unit + 3px $half-spacing-unit;
+.site-nav-list {
   text-align: center;
+
+  @media screen and (min-width: $lap-start) {
+    float: right;
+    padding: $half-spacing-unit + 3px $half-spacing-unit;
+  }
 
   li {
     display: inline-block;
 
     &:not(:first-child) {
-      margin-left: $base-spacing-unit;
+      //margin-left: $base-spacing-unit;
 
       @media screen and (min-width: $lap-start) {
         margin-left: $base-spacing-unit * 2;
       }
+    }
+
+    @media screen and (max-width: $palm-end) {
+      padding: $half-spacing-unit 0;
+      min-width: 7.833333333em;
     }
   }
 

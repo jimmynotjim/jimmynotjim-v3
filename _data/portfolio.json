@@ -1,34 +1,144 @@
 [
    {
+    "name": "Morning Brews",
+    "description": "",
+    "url": "",
+    "preview": "/dist/images/portfolio/DSC03488.jpg"
+  }, {
+    "name": "Salute",
+    "description": "",
+    "url": "",
+    "preview": "/dist/images/portfolio/DSC08092.jpg"
+  }, {
+    "name": "Quiet Evenings",
+    "description": "",
+    "url": "",
+    "preview": "/dist/images/portfolio/DSC1830.jpg"
+  }, {
+    "name": "Watchful Eye",
+    "description": "",
+    "url": "",
+    "preview": "/dist/images/portfolio/DSC09388.jpg"
+  }, {
+    "name": "For Those We Lost",
+    "description": "",
+    "url": "",
+    "preview": "/dist/images/portfolio/DSC07807.jpg"
+  }, {
     "name": "Moulton Sunset",
     "description": "",
     "url": "",
     "preview": "/dist/images/portfolio/DSC06336.jpg"
   }, {
-    "name": "His Domain",
+    "name": "The Public Speaker",
     "description": "",
     "url": "",
-    "preview": "/dist/images/portfolio/DSC06167.jpg"
+    "preview": "/dist/images/portfolio/DSC06768.jpg"
+  }, {
+    "name": "Room with a View",
+    "description": "",
+    "url": "",
+    "preview": "/dist/images/portfolio/DSC05934.jpg"
+  }, {
+    "name": "The Cameraman",
+    "description": "",
+    "url": "",
+    "preview": "/dist/images/portfolio/DSC00683.jpg"
+  }, {
+    "name": "Life of the Party",
+    "description": "",
+    "url": "",
+    "preview": "/dist/images/portfolio/DSC04531.jpg"
   }, {
     "name": "Illuminated Peaks",
     "description": "",
     "url": "",
     "preview": "/dist/images/portfolio/DSC06419.jpg"
   }, {
-    "name": "Incoming",
+    "name": "A Century of Service",
     "description": "",
     "url": "",
-    "preview": "/dist/images/portfolio/DSC03773.jpg"
+    "preview": "/dist/images/portfolio/DSC05156.jpg"
+  }, {
+    "name": "Love of Country",
+    "description": "",
+    "url": "",
+    "preview": "/dist/images/portfolio/DSC09277.jpg"
+  }, {
+    "name": "Everything You Could Ever Need",
+    "description": "",
+    "url": "",
+    "preview": "/dist/images/portfolio/DSC03937.jpg"
+  }, {
+    "name": "Cadillac Sunset",
+    "description": "",
+    "url": "",
+    "preview": "/dist/images/portfolio/DSC02962.jpg"
+  }, {
+    "name": "For the Love of It",
+    "description": "",
+    "url": "",
+    "preview": "/dist/images/portfolio/DSC09384.jpg"
+  }, {
+    "name": "Guiding Light",
+    "description": "",
+    "url": "",
+    "preview": "/dist/images/portfolio/DSC02886.jpg"
+  }, {
+    "name": "He Delivers",
+    "description": "",
+    "url": "",
+    "preview": "/dist/images/portfolio/DSC02311.jpg"
+  }, {
+    "name": "Larry and the Howard Brothers",
+    "description": "",
+    "url": "",
+    "preview": "/dist/images/portfolio/DSC04694.jpg"
+  }, {
+    "name": "Winning Cast",
+    "description": "",
+    "url": "",
+    "preview": "/dist/images/portfolio/DSC03679.jpg"
+  }, {
+    "name": "The Lookout",
+    "description": "",
+    "url": "",
+    "preview": "/dist/images/portfolio/DSC05539.jpg"
+  }, {
+    "name": "On the Trail",
+    "description": "",
+    "url": "",
+    "preview": "/dist/images/portfolio/DSC07411.jpg"
+  }, {
+    "name": "His Domain",
+    "description": "",
+    "url": "",
+    "preview": "/dist/images/portfolio/DSC06167.jpg"
+  }, {
+    "name": "The Knob",
+    "description": "",
+    "url": "",
+    "preview": "/dist/images/portfolio/DSC07900.jpg"
   }, {
     "name": "Frosty Sunrise",
     "description": "",
     "url": "",
     "preview": "/dist/images/portfolio/DSC0591.jpg"
   }, {
-    "name": "Larry and the Howard Brothers",
+    "name": "The Song Writer",
     "description": "",
     "url": "",
-    "preview": "/dist/images/portfolio/DSC04694.jpg"
+    "preview": "/dist/images/portfolio/DSC05077.jpg"
+  }, {
+    "name": "Incoming",
+    "description": "",
+    "url": "",
+    "preview": "/dist/images/portfolio/DSC03773.jpg"
+  }, {
+    "name": "Reading the Signals",
+    "description": "",
+    "url": "",
+    "preview": "/dist/images/portfolio/DSC0645.jpg"
   }, {
     "name": "Daybreak on the Farm",
     "description": "",

@@ -17,4 +17,4 @@ Of course, nothing is ever so easy, and the world still had a few lessons to sha
 
 As time passed, my career path jumped from waiting tables, to building homes, and for the last five years building websites. I'm a driven person, and as much as I pushed myself to excel in each field, photography would always tug at the corner of my soul, begging to be given a shot. For a long time I ignored it, believing all the hype that the industry was dead or at least dying, and there was no way to make a living from your art.
 
-I see now that photography was always the right path, that I let myself be convinced it wasn't right simply because it was the path unknown. Luckily there's still plenty of time to change the road I'm on, and I've already taken the first leap.
+I see now that photography was always the right path, that I let myself be convinced it wasn't simply because it was the path unknown. Luckily there's still plenty of time to change the road I'm on, and I'm already taking the first leap.

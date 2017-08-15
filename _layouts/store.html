@@ -19,20 +19,22 @@
 
           <header class="page-header">
             <h1 class="page-title">{{ page.title | escape }}</h1>
-            <p>Selected images available for purchase, straight from my hands to your home. All images are printed on archival quality paper, at 18 inches on the longest side, the perfect size to pair with a three inch mat.</p>
+            <p>Select images available for purchase, straight from my hands to your home. All images are printed in my studio using Canon's latest dye inks on pro quality paper, signed, and then packaged in protective tubes. Framed prints are double packed for extra protection.</p>
           </header>
 
           <ul class="store-list">
+            {% assign items = site.store | sort:"order"  %}
+            {% for item in items %}
+              {% if item.draft != true %}
+              <li class="store-list__item">
 
-            {% for photo in site.data.store %}
-            <li class="store-list__item">
+                  <a href="{{ item.url }}" class="store-list__link">
+                    <img src="{{ site.github.url }}/dist/images/portfolio/{{ item.preview }}" alt="Preview of {{ item.title }}" class="store-list__image" />
+                    <h3 class="store-list__name">{{ item.title }}</h3>
+                  </a>
 
-                <a href="{{ photo.url }}" class="store-list__link">
-                  <img src="{{ site.github.url }}{{ photo.preview }}" alt="Preview of {{ photo.name }}" class="store-list__image" />
-                  <h3 class="store-list__name">{{ photo.name }}</h3>
-                </a>
-
-            </li>
+              </li>
+              {% endif %}
             {% endfor %}
 
           </ul>

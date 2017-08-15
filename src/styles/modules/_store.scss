@@ -58,3 +58,33 @@
     color: #fff;
   }
 }
+/*
+.store-item {
+  display: grid;
+
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: $base-spacing-unit;
+
+  @media screen and (min-width: $lap-start) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media screen and (min-width: $desk-start) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media screen and (min-width: $wall-start) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  font-family: $font-secondary;
+
+  h1 {
+    font-size: $size-gamma;
+  }
+
+  p {
+    font-size: $size-epsilon;
+  }
+}
+*/

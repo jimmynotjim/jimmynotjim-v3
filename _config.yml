@@ -25,6 +25,9 @@ collections:
   writing:
     output: true,
     permalink: /:collection/:path/
+  store:
+    output: true,
+    permalink: /:collection/:path/
 
 typekit_code: fxk6cse
 ga_code:      UA-15192663-6

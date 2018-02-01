@@ -23,7 +23,7 @@
           </header>
 
           <ul class="store-list">
-            {% assign items = site.store | sort:"order"  %}
+            {% assign items = site.store | sort:"order" %}
             {% for item in items %}
               {% if item.draft != true %}
               <li class="store-list__item">

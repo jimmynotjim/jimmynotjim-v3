@@ -1,10 +1,40 @@
 [
-   {
+  {
+    "name": "Indivisible Nation",
+    "description": "",
+    "url": "",
+    "preview": "/dist/images/portfolio/DSC2571.jpg"
+  }, {
+    "name": "Worth the Search",
+    "description": "",
+    "url": "",
+    "preview": "/dist/images/portfolio/DSC0503.jpg"
+  }, {
+    "name": "It Comes for Us All",
+    "description": "",
+    "url": "",
+    "preview": "/dist/images/portfolio/DSC3500.jpg"
+  }, {
+    "name": "On the Trail",
+    "description": "",
+    "url": "",
+    "preview": "/dist/images/portfolio/DSC9779.jpg"
+  }, {
+    "name": "Eyes on the Water",
+    "description": "",
+    "url": "",
+    "preview": "/dist/images/portfolio/DSC7128.jpg"
+  }, {
+    "name": "This's the Stuff",
+    "description": "",
+    "url": "",
+    "preview": "/dist/images/portfolio/DSC1479.jpg"
+  }, {
     "name": "The Shadow",
     "description": "",
     "url": "",
     "preview": "/dist/images/portfolio/DSC1782.jpg"
-   }, {
+  }, {
     "name": "Always Be Closing",
     "description": "",
     "url": "",
@@ -14,6 +44,11 @@
     "description": "",
     "url": "",
     "preview": "/dist/images/portfolio/DSC0329.jpg"
+  }, {
+    "name": "Steady Hands",
+    "description": "",
+    "url": "",
+    "preview": "/dist/images/portfolio/DSC0627.jpg"
   }, {
     "name": "Baaaaaaaddddd Lands",
     "description": "",
